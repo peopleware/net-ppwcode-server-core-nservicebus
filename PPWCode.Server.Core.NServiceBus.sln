@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{4D716D42-1801-4AFE-B653-12AFB07134EA}"
+ProjectSection(SolutionItems) = preProject
+	LICENSE = LICENSE
+	NOTICE = NOTICE
+	README.md = README.md
+	assets\ppwcode_logo.jpg = assets\ppwcode_logo.jpg
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "psake", "psake", "{E631B11D-B2AC-4F26-9955-C91F0FCDBD8C}"
+ProjectSection(SolutionItems) = preProject
+	init-psake.ps1 = init-psake.ps1
+	psakefile.ps1 = psakefile.ps1
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{D3C7D42D-B568-4126-8526-0F0C9673FCCB}"
+ProjectSection(SolutionItems) = preProject
+	src\Directory.Build.props = src\Directory.Build.props
+	src\version.props = src\version.props
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "style-cop", "style-cop", "{09619B56-2E2A-4082-95D3-76819C6A1B6E}"
+ProjectSection(SolutionItems) = preProject
+	src\StyleCop.ruleset = src\StyleCop.ruleset
+	src\StyleCop-Tests.ruleset = src\StyleCop-Tests.ruleset
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPWCode.Server.Core.NServiceBus", "src\PPWCode.Server.Core.NServiceBus\PPWCode.Server.Core.NServiceBus.csproj", "{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Debug|x64.Build.0 = Debug|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Debug|x86.Build.0 = Debug|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Release|x64.ActiveCfg = Release|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Release|x64.Build.0 = Release|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Release|x86.ActiveCfg = Release|Any CPU
+		{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

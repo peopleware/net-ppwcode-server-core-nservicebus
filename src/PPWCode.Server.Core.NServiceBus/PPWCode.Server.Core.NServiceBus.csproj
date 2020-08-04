@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- target frameworks -->
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <!-- Root Namespace -->
+    <RootNamespace>PPWCode.Server.Core.NServiceBus</RootNamespace>
+
+    <!-- nuget package -->
+    <IsPackable>true</IsPackable>
+
+    <!-- Stylecop -->
+    <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- PPWCode -->
+    <PackageReference Include="PPWCode.Server.Core" Version="1.0.0-rc010050" />
+
+    <!-- NServiceBus -->
+    <PackageReference Include="NServiceBus" Version="7.3.0" />
+  </ItemGroup>
+  
+</Project>
