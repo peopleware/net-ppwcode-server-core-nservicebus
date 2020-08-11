@@ -55,7 +55,11 @@ namespace PPWCode.Server.Core.NServiceBus
                     ITransaction transaction = session.BeginTransaction(IsolationLevel.Unspecified);
                     try
                     {
-                        MessageContextAccessor.MessageContext = new RequestMessageContext(context.MessageHeaders);
+                        MessageContextAccessor.MessageContext =
+                            new RequestMessageContext(
+                                context.MessageHeaders,
+                                session,
+                                transaction);
                         try
                         {
                             await next().ConfigureAwait(false);

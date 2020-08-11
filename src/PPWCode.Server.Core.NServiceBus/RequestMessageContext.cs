@@ -1,20 +1,33 @@
 using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using NHibernate;
 using NServiceBus;
+using PPWCode.API.Core.Contracts;
 
 namespace PPWCode.Server.Core.NServiceBus
 {
     public class RequestMessageContext
     {
         public RequestMessageContext(
-            [NotNull] IReadOnlyDictionary<string, string> messageHeaders)
+            [NotNull] IReadOnlyDictionary<string, string> messageHeaders,
+            [NotNull] ISession session,
+            [NotNull] ITransaction transaction)
         {
+            Contract.Assert(session.IsOpen);
+            Contract.Assert(transaction.IsActive);
+
             MessageHeaders = messageHeaders;
+            Session = session;
+            Transaction = transaction;
         }
 
         [NotNull]
         public IReadOnlyDictionary<string, string> MessageHeaders { get; }
+
+        [NotNull] public ISession Session { get; }
+
+        [NotNull] public ITransaction Transaction { get; }
 
         [CanBeNull]
         public string MessageId
