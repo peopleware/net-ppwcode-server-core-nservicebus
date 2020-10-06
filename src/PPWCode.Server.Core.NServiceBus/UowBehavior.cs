@@ -90,10 +90,17 @@ namespace PPWCode.Server.Core.NServiceBus
                     }
                     finally
                     {
-                        if (transaction.IsActive)
+                        try
                         {
-                            Logger.Error($"Rolling back transaction for MessageId: {context.MessageId}.");
-                            await transaction.RollbackAsync().ConfigureAwait(false);
+                            if (transaction.IsActive)
+                            {
+                                Logger.Error($"Rolling back transaction for MessageId: {context.MessageId}.");
+                                await transaction.RollbackAsync().ConfigureAwait(false);
+                            }
+                        }
+                        catch (Exception e2)
+                        {
+                            Logger.Error($"Rollback of the transaction failed for MessageId: {context.MessageId}.", e2);
                         }
                     }
                 }
