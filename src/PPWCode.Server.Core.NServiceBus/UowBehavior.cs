@@ -1,5 +1,6 @@
 using System;
 using System.Data;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Castle.Core.Logging;
 using Castle.MicroKernel;
@@ -48,6 +49,14 @@ namespace PPWCode.Server.Core.NServiceBus
 
             using (Kernel.BeginScope())
             {
+                bool measure = Logger.IsInfoEnabled;
+                Stopwatch sw = null;
+                string traceIdentifier = null;
+                if (measure)
+                {
+                    sw = Stopwatch.StartNew();
+                }
+
                 ISession session = Kernel.Resolve<ISession>();
                 try
                 {
@@ -60,6 +69,11 @@ namespace PPWCode.Server.Core.NServiceBus
                                 context.MessageHeaders,
                                 session,
                                 transaction);
+                        if (measure)
+                        {
+                            traceIdentifier = MessageContextAccessor.MessageContext?.CorrelationId;
+                        }
+
                         try
                         {
                             await next().ConfigureAwait(false);
@@ -107,6 +121,12 @@ namespace PPWCode.Server.Core.NServiceBus
                 finally
                 {
                     Kernel.ReleaseComponent(session);
+
+                    if (measure)
+                    {
+                        sw.Stop();
+                        Logger.Info(() => $"Message [MessageId: {context.MessageId}, TraceIdentifier: {traceIdentifier}] was processed in {sw.ElapsedMilliseconds} ms.");
+                    }
                 }
             }
         }
