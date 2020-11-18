@@ -77,15 +77,15 @@ namespace PPWCode.Server.Core.NServiceBus
                         try
                         {
                             await next().ConfigureAwait(false);
+                            Logger.Info(() => $"Flush and commit our request transaction, for MessageId: {context.MessageId}.");
+                            await session.FlushAsync().ConfigureAwait(false);
+                            await transaction.CommitAsync().ConfigureAwait(false);
                         }
                         finally
                         {
                             MessageContextAccessor.MessageContext = null;
                         }
 
-                        Logger.Info(() => $"Flush and commit our request transaction, for MessageId: {context.MessageId}.");
-                        await session.FlushAsync().ConfigureAwait(false);
-                        await transaction.CommitAsync().ConfigureAwait(false);
                     }
                     catch (OperationCanceledException)
                     {
