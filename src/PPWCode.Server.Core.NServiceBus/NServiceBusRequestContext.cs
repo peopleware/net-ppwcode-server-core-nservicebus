@@ -7,6 +7,8 @@ using PPWCode.Server.Core.RequestContext.Implementations;
 using PPWCode.Vernacular.Exceptions.IV;
 using PPWCode.Vernacular.Persistence.IV;
 
+#pragma warning disable CA1065
+
 namespace PPWCode.Server.Core.NServiceBus
 {
     /// <inheritdoc />
