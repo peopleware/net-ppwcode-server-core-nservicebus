@@ -31,14 +31,13 @@ namespace PPWCode.Server.Core.NServiceBus
 
         /// <inheritdoc />
         public override IPrincipal User
-            => (_principal = _principal ?? Thread.CurrentPrincipal)
+            => (_principal ??= Thread.CurrentPrincipal)
                ?? throw new ProgrammingError("Euh, no principal found on current thread");
 
         /// <inheritdoc />
         public override string TraceIdentifier
-            => _traceIdentifier = _traceIdentifier
-                                  ?? MessageContextAccessor.MessageContext?.CorrelationId
-                                  ?? Guid.NewGuid().ToString("D");
+            => _traceIdentifier ??= MessageContextAccessor.MessageContext?.CorrelationId
+                                    ?? Guid.NewGuid().ToString("D");
 
         /// <inheritdoc />
         public override CancellationToken RequestAborted
