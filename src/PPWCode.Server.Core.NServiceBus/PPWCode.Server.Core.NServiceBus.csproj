@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!-- target frameworks -->
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
 
     <!-- Root Namespace -->
     <RootNamespace>PPWCode.Server.Core.NServiceBus</RootNamespace>
@@ -20,13 +20,13 @@
 
   <ItemGroup>
     <!-- PPWCode -->
-    <PackageReference Include="PPWCode.Server.Core" Version="1.0.0" />
+    <PackageReference Include="PPWCode.Server.Core" Version="[1.2.0, 2)" />
 
     <!-- NServiceBus -->
     <PackageReference Include="NServiceBus" Version="7.3.0" />
 
     <!-- SourceLink -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
