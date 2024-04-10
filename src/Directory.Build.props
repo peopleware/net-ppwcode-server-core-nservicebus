@@ -69,7 +69,7 @@
     <Product>PPWCode</Product>
     <Authors>dvdwouwe;rvdginste</Authors>
     <Company>Peopleware NV</Company>
-    <Copyright>Copyright © Peopleware NV 2014-2022</Copyright>
+    <Copyright>Copyright © Peopleware NV 2014-2024</Copyright>
 
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/peopleware/net-ppwcode-server-core-nservicebus.git</RepositoryUrl>
@@ -84,6 +84,9 @@
 1.0.0 Initial release
 1.1.0 Target .net core 3.1, .net 5.0, .net 6.0
 1.2.0 Upgrading dependencies
+1.3.0 Upgrading dependencies, Target .net 6.0, .net 8.0
+      Remove support for .net core 3.1, .net 5.0
+      Upgrading dependencies 
       ]]>
     </PackageReleaseNotes>
 
