@@ -1,0 +1,5 @@
+name: ppwcode-server-core-nservicebus
+version: ~
+title: PPWCode.Server.Core.NServiceBus
+nav:
+  - modules/ROOT/nav.adoc
