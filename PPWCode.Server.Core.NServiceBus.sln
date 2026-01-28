@@ -8,20 +8,23 @@ ProjectSection(SolutionItems) = preProject
 	LICENSE = LICENSE
 	NOTICE = NOTICE
 	README.md = README.md
-	assets\ppwcode_logo.jpg = assets\ppwcode_logo.jpg
+	assets\ppw-logo-2.png = assets\ppw-logo-2.png
+	assets\ppw-logo.png = assets\ppw-logo.png
 EndProjectSection
 EndProject
 
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{D3C7D42D-B568-4126-8526-0F0C9673FCCB}"
 ProjectSection(SolutionItems) = preProject
+	src\common-tests.props = src\common-tests.props
+	src\common.props = src\common.props
 	src\Directory.Build.props = src\Directory.Build.props
-	src\version.props = src\version.props
+	src\Directory.Packages.props = src\Directory.Packages.props
 EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "style-cop", "style-cop", "{09619B56-2E2A-4082-95D3-76819C6A1B6E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "analyzers", "analyzers", "{09619B56-2E2A-4082-95D3-76819C6A1B6E}"
 ProjectSection(SolutionItems) = preProject
-	src\StyleCop.ruleset = src\StyleCop.ruleset
-	src\StyleCop-Tests.ruleset = src\StyleCop-Tests.ruleset
+	src\Analyzer.ruleset = src\Analyzer.ruleset
+	src\Analyzer-Tests.ruleset = src\Analyzer-Tests.ruleset
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPWCode.Server.Core.NServiceBus", "src\PPWCode.Server.Core.NServiceBus\PPWCode.Server.Core.NServiceBus.csproj", "{0D3A1FE9-76E5-4AA0-B7D6-CAD6ADEA9645}"
