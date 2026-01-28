@@ -10,6 +10,7 @@
   <ItemGroup>
     <!-- PPWCode -->
     <PackageReference Include="PPWCode.Server.Core" />
+    <PackageReference Include="PPWCode.API.Core" />
 
     <!-- NServiceBus -->
     <PackageReference Include="NServiceBus" />
