@@ -18,7 +18,7 @@ using NHibernate;
 
 using NServiceBus;
 
-using PPWCode.API.Core.Contracts;
+using PPWCode.Vernacular.Contracts.I;
 
 namespace PPWCode.Server.Core.NServiceBus
 {

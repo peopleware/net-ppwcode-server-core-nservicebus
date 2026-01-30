@@ -1,32 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <!-- target frameworks -->
-    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+  <Import Project="..\common.props" />
 
+  <PropertyGroup>
     <!-- Root Namespace -->
     <RootNamespace>PPWCode.Server.Core.NServiceBus</RootNamespace>
-
-    <!-- nuget package -->
-    <IsPackable>true</IsPackable>
-
-    <!-- Stylecop -->
-    <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
-
-  <ItemGroup>
     <!-- PPWCode -->
-    <PackageReference Include="PPWCode.Server.Core" Version="2.*" />
+    <PackageReference Include="PPWCode.Server.Core" />
+    <PackageReference Include="PPWCode.API.Core" />
 
     <!-- NServiceBus -->
-    <PackageReference Include="NServiceBus" Version="7.*" />
-
-    <!-- SourceLink -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    <PackageReference Include="NServiceBus" />
   </ItemGroup>
 
 </Project>
