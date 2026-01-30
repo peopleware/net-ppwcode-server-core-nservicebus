@@ -26,8 +26,8 @@ using NHibernate;
 using NServiceBus;
 using NServiceBus.Pipeline;
 
-using PPWCode.API.Core.Contracts;
-using PPWCode.API.Core.Exceptions;
+using PPWCode.Vernacular.Contracts.I;
+using PPWCode.Vernacular.Exceptions.IV;
 
 namespace PPWCode.Server.Core.NServiceBus
 {

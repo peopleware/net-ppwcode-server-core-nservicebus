@@ -1,0 +1,14 @@
+= Getting started
+
+== Add NuGet package
+
+This package is available on NuGet: https://www.nuget.org/packages/PPWCode.Server.Core.NServiceBus[PPWCode.Server.Core.NServiceBus].
+
+You can use your IDE to add it as a dependency to your project, or manually add it in the `.csproj` file. You would typically add this project as a dependency to your `Server` project.  This would look similar to the following:
+
+[source,xml]
+----
+include::example$project.csproj[]
+----
+
+After the package is added, you can use the base classes and interfaces from `PPWCode.Server.Core.NServiceBus` in your code.
