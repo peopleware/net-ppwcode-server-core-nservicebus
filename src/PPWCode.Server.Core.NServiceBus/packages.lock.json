@@ -29,33 +29,33 @@
       },
       "PPWCode.API.Core": {
         "type": "Direct",
-        "requested": "[2.*, )",
-        "resolved": "2.1.1",
-        "contentHash": "8xA4WoQ9KQh2g1y7Shec8Psh6Lr23rGSM4kR0ab+TeACurLdeteVwUzBjmLJfW+DQD0GgmVW1a0ybkv0DV008g==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.0.0-alpha.1",
+        "contentHash": "I1VpTAbzTlMxAzjRrURRP73BN4tI6zUSOZiaDFDbhBbLQqztXvYKlSJSLGaIhAN66lQIhjr/tBiHt2WylIA4Iw==",
         "dependencies": {
           "JetBrains.Annotations": "2025.2.4"
         }
       },
       "PPWCode.Server.Core": {
         "type": "Direct",
-        "requested": "[3.*, )",
-        "resolved": "3.0.0",
-        "contentHash": "6qwenjxII5lXwqoUANY+RBVDvSZrNflxub44YAoKrc2LXMbb7FFXsStGqSjNg2hynpKaWSWLi/np8x8LDD5pww==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.0.1-alpha.2",
+        "contentHash": "KKpcqRlAcpmWhr/0449hZzZHTnNIrepaduPPITgVc6IgxnnPCKkQxMQMwTNWJMzKe0ZWuDDZzufnlfpAdlg6Uw==",
         "dependencies": {
           "Asp.Versioning.Mvc": "8.1.1",
-          "Castle.Windsor": "[5.1.1, 5.1.2]",
+          "Castle.Windsor": "5.1.1",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
-          "NHibernateProfiler.Appender": "6.0.6050",
+          "NHibernateProfiler.Appender": "6.0.6053",
           "Newtonsoft.Json": "13.0.4",
-          "PPWCode.API.Core": "2.1.0",
-          "PPWCode.Vernacular.Contracts.I": "1.4.1",
+          "PPWCode.API.Core": "3.0.0-alpha.1",
+          "PPWCode.Vernacular.Contracts.I": "1.5.0",
           "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
           "PPWCode.Vernacular.NHibernate.III": "4.1.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
           "PPWCode.Vernacular.Semantics.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "10.0.5",
+          "System.Data.SqlClient": "4.9.1"
         }
       },
       "PPWCode.Vernacular.Contracts.I": {
@@ -505,15 +505,15 @@
       },
       "PPWCode.Vernacular.NHibernate.III": {
         "type": "CentralTransitive",
-        "requested": "[4.*, )",
-        "resolved": "4.1.0",
-        "contentHash": "QLEuQ65ggE05vGtzLsaKU9+/aBRmyy5UesslB0GMCcI+830GK5Gt9q/a0vnT0WjfT2aLlYV++aJH3kBSVcq4AA==",
+        "requested": "[4.*-*, )",
+        "resolved": "4.1.1-alpha.2",
+        "contentHash": "pQ3u/M9xRfvuMXZ/fJC1E0XHN6QU1idqeBQ+weOZhCXPQyf0GWScGXaDRY+qXL4lCCITZSV60z5hOiUUV5fiIQ==",
         "dependencies": {
           "Common.Logging": "[3.4.1, 4.0.0)",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2"
+          "System.Configuration.ConfigurationManager": "10.0.5"
         }
       },
       "PPWCode.Vernacular.Persistence.IV": {
@@ -585,33 +585,33 @@
       },
       "PPWCode.API.Core": {
         "type": "Direct",
-        "requested": "[2.*, )",
-        "resolved": "2.1.1",
-        "contentHash": "8xA4WoQ9KQh2g1y7Shec8Psh6Lr23rGSM4kR0ab+TeACurLdeteVwUzBjmLJfW+DQD0GgmVW1a0ybkv0DV008g==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.0.0-alpha.1",
+        "contentHash": "I1VpTAbzTlMxAzjRrURRP73BN4tI6zUSOZiaDFDbhBbLQqztXvYKlSJSLGaIhAN66lQIhjr/tBiHt2WylIA4Iw==",
         "dependencies": {
           "JetBrains.Annotations": "2025.2.4"
         }
       },
       "PPWCode.Server.Core": {
         "type": "Direct",
-        "requested": "[3.*, )",
-        "resolved": "3.0.0",
-        "contentHash": "6qwenjxII5lXwqoUANY+RBVDvSZrNflxub44YAoKrc2LXMbb7FFXsStGqSjNg2hynpKaWSWLi/np8x8LDD5pww==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.0.1-alpha.2",
+        "contentHash": "KKpcqRlAcpmWhr/0449hZzZHTnNIrepaduPPITgVc6IgxnnPCKkQxMQMwTNWJMzKe0ZWuDDZzufnlfpAdlg6Uw==",
         "dependencies": {
           "Asp.Versioning.Mvc": "8.1.1",
-          "Castle.Windsor": "[5.1.1, 5.1.2]",
+          "Castle.Windsor": "5.1.1",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
-          "NHibernateProfiler.Appender": "6.0.6050",
+          "NHibernateProfiler.Appender": "6.0.6053",
           "Newtonsoft.Json": "13.0.4",
-          "PPWCode.API.Core": "2.1.0",
-          "PPWCode.Vernacular.Contracts.I": "1.4.1",
+          "PPWCode.API.Core": "3.0.0-alpha.1",
+          "PPWCode.Vernacular.Contracts.I": "1.5.0",
           "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
           "PPWCode.Vernacular.NHibernate.III": "4.1.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
           "PPWCode.Vernacular.Semantics.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "8.0.1",
+          "System.Data.SqlClient": "4.9.1"
         }
       },
       "PPWCode.Vernacular.Contracts.I": {
@@ -1075,15 +1075,15 @@
       },
       "PPWCode.Vernacular.NHibernate.III": {
         "type": "CentralTransitive",
-        "requested": "[4.*, )",
-        "resolved": "4.1.0",
-        "contentHash": "QLEuQ65ggE05vGtzLsaKU9+/aBRmyy5UesslB0GMCcI+830GK5Gt9q/a0vnT0WjfT2aLlYV++aJH3kBSVcq4AA==",
+        "requested": "[4.*-*, )",
+        "resolved": "4.1.1-alpha.2",
+        "contentHash": "pQ3u/M9xRfvuMXZ/fJC1E0XHN6QU1idqeBQ+weOZhCXPQyf0GWScGXaDRY+qXL4lCCITZSV60z5hOiUUV5fiIQ==",
         "dependencies": {
           "Common.Logging": "[3.4.1, 4.0.0)",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2"
+          "System.Configuration.ConfigurationManager": "8.0.1"
         }
       },
       "PPWCode.Vernacular.Persistence.IV": {
@@ -1155,33 +1155,33 @@
       },
       "PPWCode.API.Core": {
         "type": "Direct",
-        "requested": "[2.*, )",
-        "resolved": "2.1.1",
-        "contentHash": "8xA4WoQ9KQh2g1y7Shec8Psh6Lr23rGSM4kR0ab+TeACurLdeteVwUzBjmLJfW+DQD0GgmVW1a0ybkv0DV008g==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.0.0-alpha.1",
+        "contentHash": "I1VpTAbzTlMxAzjRrURRP73BN4tI6zUSOZiaDFDbhBbLQqztXvYKlSJSLGaIhAN66lQIhjr/tBiHt2WylIA4Iw==",
         "dependencies": {
           "JetBrains.Annotations": "2025.2.4"
         }
       },
       "PPWCode.Server.Core": {
         "type": "Direct",
-        "requested": "[3.*, )",
-        "resolved": "3.0.0",
-        "contentHash": "6qwenjxII5lXwqoUANY+RBVDvSZrNflxub44YAoKrc2LXMbb7FFXsStGqSjNg2hynpKaWSWLi/np8x8LDD5pww==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.0.1-alpha.2",
+        "contentHash": "KKpcqRlAcpmWhr/0449hZzZHTnNIrepaduPPITgVc6IgxnnPCKkQxMQMwTNWJMzKe0ZWuDDZzufnlfpAdlg6Uw==",
         "dependencies": {
           "Asp.Versioning.Mvc": "8.1.1",
-          "Castle.Windsor": "[5.1.1, 5.1.2]",
+          "Castle.Windsor": "5.1.1",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
-          "NHibernateProfiler.Appender": "6.0.6050",
+          "NHibernateProfiler.Appender": "6.0.6053",
           "Newtonsoft.Json": "13.0.4",
-          "PPWCode.API.Core": "2.1.0",
-          "PPWCode.Vernacular.Contracts.I": "1.4.1",
+          "PPWCode.API.Core": "3.0.0-alpha.1",
+          "PPWCode.Vernacular.Contracts.I": "1.5.0",
           "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
           "PPWCode.Vernacular.NHibernate.III": "4.1.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
           "PPWCode.Vernacular.Semantics.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "9.0.14",
+          "System.Data.SqlClient": "4.9.1"
         }
       },
       "PPWCode.Vernacular.Contracts.I": {
@@ -1639,15 +1639,15 @@
       },
       "PPWCode.Vernacular.NHibernate.III": {
         "type": "CentralTransitive",
-        "requested": "[4.*, )",
-        "resolved": "4.1.0",
-        "contentHash": "QLEuQ65ggE05vGtzLsaKU9+/aBRmyy5UesslB0GMCcI+830GK5Gt9q/a0vnT0WjfT2aLlYV++aJH3kBSVcq4AA==",
+        "requested": "[4.*-*, )",
+        "resolved": "4.1.1-alpha.2",
+        "contentHash": "pQ3u/M9xRfvuMXZ/fJC1E0XHN6QU1idqeBQ+weOZhCXPQyf0GWScGXaDRY+qXL4lCCITZSV60z5hOiUUV5fiIQ==",
         "dependencies": {
           "Common.Logging": "[3.4.1, 4.0.0)",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2"
+          "System.Configuration.ConfigurationManager": "9.0.14"
         }
       },
       "PPWCode.Vernacular.Persistence.IV": {
