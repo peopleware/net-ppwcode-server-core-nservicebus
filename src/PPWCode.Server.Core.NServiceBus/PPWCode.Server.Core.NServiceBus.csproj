@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <!-- PPWCode -->
+    <PackageReference Include="PPWCode.Vernacular.NHibernate.III" />
     <PackageReference Include="PPWCode.Server.Core" />
     <PackageReference Include="PPWCode.API.Core" />
 
