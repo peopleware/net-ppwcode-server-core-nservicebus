@@ -37,6 +37,9 @@
         <PackageVersion Include="NHibernate" Version="5.*" />
         <PackageVersion Include="NHibernateProfiler.Appender" Version="6.0.*"/>
 
+        <!-- project specific -->
+        <PackageVersion Include="NServiceBus" Version="7.*" />
+
         <!-- nunit -->
         <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
         <PackageVersion Include="NUnit" Version="4.4.0" />
@@ -46,9 +49,6 @@
 
         <!-- analyzers -->
         <PackageVersion Include="NUnit.Analyzers" Version="4.11.2" />
-
-        <!-- project specific -->
-        <PackageVersion Include="NServiceBus" Version="7.*" />
     </ItemGroup>
 
     <!-- microsoft: framework dependent -->
