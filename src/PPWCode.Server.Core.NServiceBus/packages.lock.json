@@ -63,6 +63,21 @@
         "resolved": "1.5.0",
         "contentHash": "Hv7hjZ+RXEnVkAZEdwlAW5QbT0Hvh+pCusaiQT5bRD93Z58OuMHH6Q48TizzufF6+DRm9rJdnufIcOWWvKLKaw=="
       },
+      "PPWCode.Vernacular.NHibernate.III": {
+        "type": "Direct",
+        "requested": "[5.*-*, )",
+        "resolved": "5.0.0-alpha.3",
+        "contentHash": "5seRR8tAfEXdhI3VhlUMT/+WKA0pXHW7d77sDgE90g1SA8pNmB2UtLYt5h3Va558l+YfsO6GU18/KThH/WxjKA==",
+        "dependencies": {
+          "JetBrains.Annotations": "2025.2.4",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
+          "NHibernate": "5.6.0",
+          "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
+          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
+          "System.Configuration.ConfigurationManager": "10.0.7"
+        }
+      },
       "StyleCop.Analyzers": {
         "type": "Direct",
         "requested": "[1.2.0-beta.556, )",
@@ -485,21 +500,6 @@
         "resolved": "2.2.1",
         "contentHash": "EnSpiADCKJenktPGhgsDAnsSzbf+HTDq52Wkr2F+58/sanx2rb4//Q68SnYEaOKl/AACQBp+FOKuGih0lYYW0A=="
       },
-      "PPWCode.Vernacular.NHibernate.III": {
-        "type": "CentralTransitive",
-        "requested": "[5.*-*, )",
-        "resolved": "5.0.0-alpha.3",
-        "contentHash": "5seRR8tAfEXdhI3VhlUMT/+WKA0pXHW7d77sDgE90g1SA8pNmB2UtLYt5h3Va558l+YfsO6GU18/KThH/WxjKA==",
-        "dependencies": {
-          "JetBrains.Annotations": "2025.2.4",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
-          "NHibernate": "5.6.0",
-          "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
-          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.7"
-        }
-      },
       "PPWCode.Vernacular.Persistence.IV": {
         "type": "CentralTransitive",
         "requested": "[2.*, )",
@@ -593,6 +593,21 @@
         "requested": "[1.*, )",
         "resolved": "1.5.0",
         "contentHash": "Hv7hjZ+RXEnVkAZEdwlAW5QbT0Hvh+pCusaiQT5bRD93Z58OuMHH6Q48TizzufF6+DRm9rJdnufIcOWWvKLKaw=="
+      },
+      "PPWCode.Vernacular.NHibernate.III": {
+        "type": "Direct",
+        "requested": "[5.*-*, )",
+        "resolved": "5.0.0-alpha.3",
+        "contentHash": "5seRR8tAfEXdhI3VhlUMT/+WKA0pXHW7d77sDgE90g1SA8pNmB2UtLYt5h3Va558l+YfsO6GU18/KThH/WxjKA==",
+        "dependencies": {
+          "JetBrains.Annotations": "2025.2.4",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
+          "NHibernate": "5.6.0",
+          "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
+          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
+          "System.Configuration.ConfigurationManager": "8.0.1"
+        }
       },
       "StyleCop.Analyzers": {
         "type": "Direct",
@@ -1030,21 +1045,6 @@
         "resolved": "2.2.1",
         "contentHash": "EnSpiADCKJenktPGhgsDAnsSzbf+HTDq52Wkr2F+58/sanx2rb4//Q68SnYEaOKl/AACQBp+FOKuGih0lYYW0A=="
       },
-      "PPWCode.Vernacular.NHibernate.III": {
-        "type": "CentralTransitive",
-        "requested": "[5.*-*, )",
-        "resolved": "5.0.0-alpha.3",
-        "contentHash": "5seRR8tAfEXdhI3VhlUMT/+WKA0pXHW7d77sDgE90g1SA8pNmB2UtLYt5h3Va558l+YfsO6GU18/KThH/WxjKA==",
-        "dependencies": {
-          "JetBrains.Annotations": "2025.2.4",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
-          "NHibernate": "5.6.0",
-          "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
-          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "8.0.1"
-        }
-      },
       "PPWCode.Vernacular.Persistence.IV": {
         "type": "CentralTransitive",
         "requested": "[2.*, )",
@@ -1138,6 +1138,21 @@
         "requested": "[1.*, )",
         "resolved": "1.5.0",
         "contentHash": "Hv7hjZ+RXEnVkAZEdwlAW5QbT0Hvh+pCusaiQT5bRD93Z58OuMHH6Q48TizzufF6+DRm9rJdnufIcOWWvKLKaw=="
+      },
+      "PPWCode.Vernacular.NHibernate.III": {
+        "type": "Direct",
+        "requested": "[5.*-*, )",
+        "resolved": "5.0.0-alpha.3",
+        "contentHash": "5seRR8tAfEXdhI3VhlUMT/+WKA0pXHW7d77sDgE90g1SA8pNmB2UtLYt5h3Va558l+YfsO6GU18/KThH/WxjKA==",
+        "dependencies": {
+          "JetBrains.Annotations": "2025.2.4",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.15",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.15",
+          "NHibernate": "5.6.0",
+          "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
+          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
+          "System.Configuration.ConfigurationManager": "9.0.15"
+        }
       },
       "StyleCop.Analyzers": {
         "type": "Direct",
@@ -1568,21 +1583,6 @@
         "requested": "[2.*, )",
         "resolved": "2.2.1",
         "contentHash": "EnSpiADCKJenktPGhgsDAnsSzbf+HTDq52Wkr2F+58/sanx2rb4//Q68SnYEaOKl/AACQBp+FOKuGih0lYYW0A=="
-      },
-      "PPWCode.Vernacular.NHibernate.III": {
-        "type": "CentralTransitive",
-        "requested": "[5.*-*, )",
-        "resolved": "5.0.0-alpha.3",
-        "contentHash": "5seRR8tAfEXdhI3VhlUMT/+WKA0pXHW7d77sDgE90g1SA8pNmB2UtLYt5h3Va558l+YfsO6GU18/KThH/WxjKA==",
-        "dependencies": {
-          "JetBrains.Annotations": "2025.2.4",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.15",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.15",
-          "NHibernate": "5.6.0",
-          "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
-          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "9.0.15"
-        }
       },
       "PPWCode.Vernacular.Persistence.IV": {
         "type": "CentralTransitive",
