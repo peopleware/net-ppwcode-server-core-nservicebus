@@ -11,9 +11,9 @@
 
 using System.Threading.Tasks;
 
-using Castle.Core.Logging;
-
 using JetBrains.Annotations;
+
+using Microsoft.Extensions.Logging;
 
 using NServiceBus;
 
@@ -23,7 +23,8 @@ namespace PPWCode.Server.Core.NServiceBus
 {
     public abstract class MessageHandler<TMessage> : IHandleMessages<TMessage>
     {
-        private ILogger _logger = NullLogger.Instance;
+        [CanBeNull]
+        private ILogger _logger;
 
         protected MessageHandler([NotNull] IRequestContext requestContext)
         {
@@ -36,17 +37,7 @@ namespace PPWCode.Server.Core.NServiceBus
         [NotNull]
         [UsedImplicitly]
         public ILogger Logger
-        {
-            get => _logger;
-            set
-            {
-                // ReSharper disable once ConditionIsAlwaysTrueOrFalse
-                if (value != null)
-                {
-                    _logger = value;
-                }
-            }
-        }
+        => _logger ??= PPWLogging.GetLogger(GetType());
 
         [CanBeNull]
         [UsedImplicitly]
