@@ -98,14 +98,14 @@ jobs:
         # ContinuousIntegrationBuild=true excludes full-framework
         # builds on Linux and macOS
         run: |
-          dotnet restore PPWCode.Server.Core.NServiceBus.sln \
+          dotnet restore PPWCode.Server.Core.NServiceBus.slnx \
             --locked-mode \
             -p:Configuration=Release
 
       - name: Build
         shell: bash
         run: |
-          dotnet build PPWCode.Server.Core.NServiceBus.sln \
+          dotnet build PPWCode.Server.Core.NServiceBus.slnx \
             --configuration Release \
             --no-restore \
             -p:ContinuousIntegrationBuild=true \
@@ -116,7 +116,7 @@ jobs:
       - name: Pack
         shell: bash
         run: |
-          dotnet pack PPWCode.Server.Core.NServiceBus.sln \
+          dotnet pack PPWCode.Server.Core.NServiceBus.slnx \
             --configuration Release \
             --no-build \
             --output ./artifacts \
