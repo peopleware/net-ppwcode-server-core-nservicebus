@@ -22,7 +22,7 @@
 
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/peopleware/net-ppwcode-server-core-nservicebus.git</RepositoryUrl>
-        <PackageTags>ppwcode server core nservicebus</PackageTags>
+        <PackageTags>ppwcode server core nservicebus gen4</PackageTags>
         <PackageProjectUrl>https://github.com/peopleware/net-ppwcode-server-core-nservicebus</PackageProjectUrl>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
