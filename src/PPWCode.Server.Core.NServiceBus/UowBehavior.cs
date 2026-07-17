@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 using NHibernate;
@@ -57,7 +58,7 @@ namespace PPWCode.Server.Core.NServiceBus
                 sw = Stopwatch.StartNew();
             }
 
-            ISessionProviderAsync sessionProvider = context.Builder.Build<ISessionProviderAsync>();
+            ISessionProviderAsync sessionProvider = context.Builder.GetRequiredService<ISessionProviderAsync>();
             ISession session = sessionProvider.Session;
             try
             {
@@ -88,8 +89,15 @@ namespace PPWCode.Server.Core.NServiceBus
                             Logger.LogInformation("Flush and commit our request transaction, for MessageId {MessageId}", context.MessageId);
                         }
 
-                        await session.FlushAsync().ConfigureAwait(false);
-                        await transaction.CommitAsync().ConfigureAwait(false);
+                        await session.FlushAsync(context.CancellationToken).ConfigureAwait(false);
+
+                        await sessionProvider
+                            .SafeEnvironmentProviderAsync
+                            .RunAsync(
+                                nameof(ITransaction.CommitAsync),
+                                transaction.CommitAsync,
+                                context.CancellationToken)
+                            .ConfigureAwait(false);
                     }
                     finally
                     {
@@ -126,7 +134,7 @@ namespace PPWCode.Server.Core.NServiceBus
                         if (transaction.IsActive)
                         {
                             Logger.LogError("Rolling back transaction for MessageId {MessageId}", context.MessageId);
-                            await transaction.RollbackAsync().ConfigureAwait(false);
+                            await transaction.RollbackAsync(context.CancellationToken).ConfigureAwait(false);
                         }
                     }
                     catch (Exception e2)

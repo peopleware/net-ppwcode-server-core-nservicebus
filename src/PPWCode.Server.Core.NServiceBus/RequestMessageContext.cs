@@ -61,7 +61,9 @@ namespace PPWCode.Server.Core.NServiceBus
         [CanBeNull]
         public DateTime? TimeSent
             => MessageHeaders.ContainsKey(Headers.TimeSent)
-                   ? DateTimeExtensions.ToUtcDateTime(MessageHeaders[Headers.TimeSent])
+                   ? DateTimeOffsetHelper
+                       .ToDateTimeOffset(Headers.TimeSent)
+                       .UtcDateTime
                    : null;
     }
 }
